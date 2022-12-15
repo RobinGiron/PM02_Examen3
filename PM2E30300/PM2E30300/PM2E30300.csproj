@@ -1,0 +1,93 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <Version>1.0.1</Version>
+    <FileVersion>1.0.1.1</FileVersion>
+    <AssemblyVersion>1.0.1.1</AssemblyVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\AcherusGrotesque-Regular.otf" />
+    <None Remove="Fonts\AcherusGrotesque-RegularItalic.otf" />
+    <None Remove="Fonts\Madani Arabic Black.ttf" />
+    <None Remove="Fonts\Madani Arabic Bold.ttf" />
+    <None Remove="Fonts\Madani Arabic Extra Bold.ttf" />
+    <None Remove="Fonts\Madani Arabic Extra Light.ttf" />
+    <None Remove="Fonts\Madani Arabic Light.ttf" />
+    <None Remove="Fonts\Madani Arabic Medium.ttf" />
+    <None Remove="Fonts\Madani Arabic Regular.ttf" />
+    <None Remove="Fonts\Madani Arabic Semi Bold.ttf" />
+    <None Remove="Fonts\Madani Arabic Thin.ttf" />
+    <None Remove="Fonts\Madani Arabic Variable.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\AcherusGrotesque-Regular.otf" />
+    <EmbeddedResource Include="Fonts\AcherusGrotesque-RegularItalic.otf" />
+    <EmbeddedResource Include="Fonts\Madani Arabic Black.ttf" />
+    <EmbeddedResource Include="Fonts\Madani Arabic Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Madani Arabic Extra Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Madani Arabic Extra Light.ttf" />
+    <EmbeddedResource Include="Fonts\Madani Arabic Light.ttf" />
+    <EmbeddedResource Include="Fonts\Madani Arabic Medium.ttf" />
+    <EmbeddedResource Include="Fonts\Madani Arabic Regular.ttf" />
+    <EmbeddedResource Include="Fonts\Madani Arabic Semi Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Madani Arabic Thin.ttf" />
+    <EmbeddedResource Include="Fonts\Madani Arabic Variable.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AdMaiora.RealXaml.Client" Version="1.0.0" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.1.0" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.4" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2478" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.763-beta" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v11.0\Mono.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="RecordatoriosEditar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="RecordatoriosVistaPrevia.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Menu\FlyoutPage1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Menu\FlyoutPage1Detail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Menu\FlyoutPage1Flyout.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Menu\MyPopupAdjunta.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Menu\MyPopupPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Menu\UpdateUser.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="test\Page1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="test\PaginaSwipe.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

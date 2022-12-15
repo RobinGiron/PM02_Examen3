@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="PM2E30300.RecordatoriosEditar"
+             BackgroundImage="grid.png">
+    <NavigationPage.TitleView>
+        <!--<SearchBar HeightRequest="44" WidthRequest="300" />-->
+        <Entry Visual="Material" Placeholder="Titulo" PlaceholderColor="#59000000" FontAttributes="Bold" FontSize="19" BackgroundColor="Transparent"/>
+    </NavigationPage.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="attach.png" Text="Adjuntar" Clicked="Adjunta_Click" Order="Primary"/>
+        <ToolbarItem IconImageSource="trash.png" Text="Eliminar" Clicked="Moreclick" Order="Secondary"/>
+        <ToolbarItem IconImageSource="share_26px.png" Text="Compartir" Clicked="Shareclick" Order="Secondary"/>
+        <ToolbarItem IconImageSource="star.png" Text="Agregar como Favorito" Clicked="toFavClick" Order="Secondary"/>
+    </ContentPage.ToolbarItems>
+    <Grid x:Name="ContenidoEditar" RowDefinitions="Auto,Auto">
+        <ScrollView Grid.Row="0" Padding="-1">
+            <StackLayout BackgroundColor="Transparent" Orientation="Vertical">
+                <ScrollView BackgroundColor="Transparent" HeightRequest="500">
+                    <Editor TextColor="Black" FontSize="20" FontFamily="Madani-Regular" VerticalOptions="FillAndExpand"
+                            AutoSize="TextChanges" BackgroundColor="Transparent"/>
+                </ScrollView>
+                <Frame x:Name="frameaudio" CornerRadius="15" Padding="0,0,0,0" HasShadow="True" Margin="5" IsVisible="false">
+                    <BoxView BackgroundColor="CadetBlue" HeightRequest="150" >
+
+                    </BoxView>
+                </Frame>
+                <Frame x:Name="framedibujo" CornerRadius="15" Padding="0,0,0,0" HasShadow="True" Margin="5" IsVisible="false">
+                    <BoxView BackgroundColor="CadetBlue" HeightRequest="150" >
+
+                    </BoxView>
+                </Frame>
+                <Frame x:Name="frameimagen" CornerRadius="15" Padding="0,0,0,0" HasShadow="True" Margin="5" IsVisible="false">
+                    <BoxView BackgroundColor="CadetBlue" HeightRequest="150" >
+
+                    </BoxView>
+                </Frame>
+                <Frame x:Name="framePdf" CornerRadius="15" Padding="0,0,0,0" HasShadow="True" Margin="5" IsVisible="false">
+                    <BoxView BackgroundColor="CadetBlue" HeightRequest="150" >
+
+                    </BoxView>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+        <Frame HeightRequest="50" Grid.Row="1" Padding="-1" BackgroundColor="WhiteSmoke" VerticalOptions="End" 
+                   HorizontalOptions="FillAndExpand" HasShadow="True">
+            <StackLayout Orientation="Horizontal">
+                <Frame CornerRadius="50" WidthRequest="10" Margin="10,0,0,0" BorderColor="#7F808080">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Frame CornerRadius="50" WidthRequest="10" Margin="10,0,0,0" BorderColor="#7F808080">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Frame CornerRadius="50" WidthRequest="10" Margin="10,0,0,0" BorderColor="#7F808080">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Frame CornerRadius="50" WidthRequest="10" Margin="10,0,0,0" BorderColor="#7F808080">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Frame CornerRadius="50" WidthRequest="10" Margin="10,0,0,0" BorderColor="#7F808080">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Frame CornerRadius="50" WidthRequest="10" Margin="10,0,0,0" BorderColor="#7F808080">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

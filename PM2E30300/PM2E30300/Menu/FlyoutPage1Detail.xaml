@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E30300.Menu.FlyoutPage1Detail">
+  <StackLayout Padding="10" BackgroundColor="White">
+        <StackLayout Orientation="Horizontal" BackgroundColor="SeaGreen">
+            <Label Text="Hola Josseth,&#10;Buenos Dias" Margin="20,10" TextColor="#0C0B0B"
+                    HorizontalOptions="StartAndExpand" FontSize="27" FontFamily="Madani-SemiBold">
+                    <!--<Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Hola Josseth," />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="Buenos Dias" />
+                    </FormattedString>
+                </Label.FormattedText>-->
+                </Label>
+            <Frame  BackgroundColor="Transparent" 
+                   CornerRadius="10" 
+                   WidthRequest="12" 
+                   HeightRequest="12" HorizontalOptions="End" Margin="0,0,10,0" >
+                <Image Source="user.png" Aspect="Fill"/>
+            </Frame>
+
+        </StackLayout>
+        <StackLayout Orientation="Vertical">
+            <Frame BackgroundColor="#E8E8E8" CornerRadius="15" Padding="0,0,0,0" Margin="10,0" HasShadow="True" InputTransparent="False">
+                <SearchBar Placeholder="Buscar"></SearchBar>
+            </Frame>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
